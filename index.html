@@ -138,20 +138,23 @@
                     <button>EQUIPOS</button>
                     <button>CANCHAS</button>
                 </div>
-                <hr class="line">
+
+                <hr>
+
 
                 <div class="secondpage__labels">
                     <form action="/" method="get">
-                        <label for="Ubicacion">UBICACION
-                            <img src="/assets/Group 1.svg" alt="Icono referente a ubicacion">
 
+                        <label for="Ubicacion">
+                            <img src="/assets/Group 1.svg" alt="Icono referente a ubicacion">
+                            Ubicacion
+                            <select name="Ubicacion" id="Ubicacion">
+                                <option selected value="Default">Ciudad Estado o Código postal</option>
+                                <option value="Carobobo">Carobobo</option>
+                                <option value="Lara">Lara</option>
+                                <option value="Caracas">Caracas</option>
+                            </select>
                         </label>
-                        <select name="Ubicacion" id="Ubicacion">
-                            <option selected value="Default"></option>
-                            <option value="Carobobo">Carobobo</option>
-                            <option value="Lara">Lara</option>
-                            <option value="Caracas">Caracas</option>
-                        </select>
 
 
 
@@ -171,16 +174,17 @@
 
                         <label for="">TIPO DE JUEGO
                             <img src="/assets/people-outline.svg" alt="Icono referente a personas">
-
+                            Tipo de juego
+                            <select name="Tipo de juego" id="Tipo de juego">
+                                <option selected value="Default"></option>
+                                <option value="Single">Singles</option>
+                                <option value="Doubles">Doubles</option>
+                            </select>
                         </label>
-                        <select name="Tipo de juego" id="Tipo de juego">
-                            <option selected value="Default"></option>
-                            <option value="Single">Singles</option>
-                            <option value="Doubles">Doubles</option>
-                        </select>
 
-                        <button>
-                            <input type="submit" value="Encontrar partidos">
+                        
+                        <button type="submit">
+                            Encontrar partidos
                         </button>
                 </div>
 
