@@ -4,7 +4,7 @@
 
 <head>
 
-    <!-- Anade los simbolos y elementos del idioma espanol requerido para algunos navegadores -->
+    <!-- Anade los simbolos y elementos del idioma español requerido para algunos navegadores -->
     <meta charset="UTF-8">
 
     <!-- Configuracion de viewport, impacta en la experiencia del usurario -->
@@ -30,30 +30,33 @@
     <!-- icono de la pagina en pestana del navegador -->
     <link rel="shortcut icon" href="/assets/img (1).svg" type="image/x-icon">
     <title>Tenis club</title>
-
+    <!-- Solo copiar y pegar/google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <!-- Es la parte visual de la pagina -->
 
-    <header>
+    <header class="navbar">
 
-        <nav>
+        <nav class="navbar__nav">
 
             <img src="/assets/img (2).svg" alt="Logo principal de la pagina, tiene forma de pelota de tenis"
-                title="Tenis club">
+                title="Tenis club" class="navbar__nav__img">
 
-            <ul>
-                <li>Inicio</li>
-                <li>Canchas cerca de ti</li>
-                <li>Encuentra jugadores</li>
-                <li>Torneos</li>
+            <ul class="navbar__nav__list">
+                <li>INICIO</li>
+                <li>CANCHAS CERCA DE TI</li>
+                <li>ENCUENTRA JUGADORES</li>
+                <li>TORNEOS</li>
             </ul>
 
-            <div>
-                <button>Iniciar sesion</button>
-                <button>Registrarme</button>
+            <div class="navbar__nav__buttons">
+                <button class="navbar__nav__login">INICIAR SESION</button>
+                <button class="navbar__nav__signup">REGISTRARME</button>
             </div>
 
 
@@ -65,53 +68,56 @@
     <main>
 
         <!-- Jumbotron -->
-        <section>
+        <section class="jumbotron">
 
-            <h1> DESCUBRE Y CONOCE TU COMUNIDAD TENISTA LOCAL </h1>
+            <h1 class="h1"> DESCUBRE Y CONOCE TU<br>COMUNIDAD TENISTA LOCAL </h1>
 
             <p>ENCUENTRA NUEVAS PERSONAS CON LAS CUALES PODRAS JUGAR Y ENTRENAR DE FORMA SEGURA, Y LO MAS IMPORTANTE,
-                CERCA DE TI. OBTEN ACCESO EXCLUSIVO A LOS MEJORES CLUBES Y CANCHAS DE TU COMUNIDAD.</p>
-            <button>Mas informacion</button>
+                CERCA DE TI.<br>OBTEN ACCESO EXCLUSIVO A LOS MEJORES CLUBES Y CANCHAS DE TU COMUNIDAD.</p>
+            <button class="jumbotron_button">MAS INFORMACION</button>
 
-            <div>
-                <p>+500</p>
-                <p>JUGADORES REGISTRADOS</p>
+            <div class="jumbotron__absolute jumbotron__absolute--top">
+                <p class="jumbotron__absolute__number ">+500</p>
+                <p class="jumbotron__absolute__parrafo">JUGADORES REGISTRADOS</p>
             </div>
 
-            <div>
-                <p>+100</p>
-                <p>CANCHAS DISPONIBLES</p>
+            <div class="jumbotron__absolute jumbotron__absolute--bottom">
+                <p class="jumbotron__absolute__number ">+100</p>
+                <p class="jumbotron__absolute__parrafo">CANCHAS DISPONIBLES</p>
             </div>
 
         </section>
 
         <!--First page -->
-        <section>
-            <h2>EXPERIMENTA TU DEPORTE FAVORITO COMO NUNCA ANTES</h2>
+        <section class="sectionone">
+            <h2 class="sectionone_h2">EXPERIMENTA TU DEPORTE FAVORITO COMO NUNCA ANTES</h2>
 
-            <p>Conoce un nuevo mundo de posibilidades con nosotros. Conecta, compite y disfruta mientras socializas,
-                entrenas y aprendes. No hay limites, no importa si eres principiante o experto, aqui siempre encontraras
-                el equipo y lugar perfecto para ti </p>
+            <p class="sectionone_p">Conoce un nuevo mundo de posibilidades con nosotros. Conecta, compite y disfruta
+                mientras socializas,
+                entrenas y aprendes. <br>No hay limites, no importa si eres principiante o experto, aqui siempre
+                encontraras
+                el equipo y lugar perfecto para ti. </p>
 
             <!-- Contenedor de las tarjetas -->
-            <div>
+            <div class="cards_container">
 
                 <!-- Tarjeta 1 -->
-                <figure>
+                <figure class="cards_container__product">
                     <img src="/assets/Frame (1).svg" alt="Icono con forma de cancha de tenis">
-                    <figcaption>CONECTA CON AFICIONADOS DEL TENIS</figcaption>
+                    <figcaption class="cards_container__figcap">CONECTA CON AFICIONADOS DEL TENIS</figcaption>
                 </figure>
 
                 <!-- Tarjeta 2 -->
-                <figure>
+                <figure class="cards_container__product">
                     <img src="/assets/Frame (2).svg" alt="Icono con forma de pelota de tenis">
-                    <figcaption>INCREMENTA TU RUTINA DE JUEGO Y ENTRENAMIENTO</figcaption>
+                    <figcaption class="cards_container__figcap">INCREMENTA TU RUTINA DE JUEGO Y ENTRENAMIENTO
+                    </figcaption>
                 </figure>
 
                 <!-- Tarjeta 3 -->
-                <figure>
+                <figure class="cards_container__product">
                     <img src="/assets/Frame (3).svg" alt="Icono con forma de raqueta de tenis">
-                    <figcaption>ORGANIZA PARTIDOS CON ANTELACION</figcaption>
+                    <figcaption class="cards_container__figcap">ORGANIZA PARTIDOS CON ANTELACION</figcaption>
                 </figure>
 
 
@@ -120,40 +126,81 @@
         </section>
 
         <!-- Second page -->
-        <section>
-            <h2>ORGANIZATE CON NOSOTROS</h2>
+        <section class="secondpage">
+            <h2 class="secondpage__h2">ORGANIZATE CON NOSOTROS</h2>
 
-            <p>PLANEA TUS PARTIDOS Y ENTRENAMIENTOS DESDE LA COMODIDAD DE TU HOGAR</p>
+            <p class="secondpage__p">PLANEA TUS PARTIDOS Y ENTRENAMIENTOS DESDE LA COMODIDAD DE TU HOGAR</p>
 
 
-            <div>
-                <div>
+            <div class="secondpage__menu">
+                <div class="secondpage__topbuttons">
                     <button>PARTIDOS</button>
                     <button>EQUIPOS</button>
                     <button>CANCHAS</button>
                 </div>
 
-               <form action="/" method="get"></form>
-               <label for="">
-                Ubicacion 
-                <select name="" id="">
-                    <option value="Carobobo"></option>
-                </select>
-               </label>
 
-               <form action="" method="get"></form>
+                <div class="secondpage__labels">
+                    <form action="/" method="get">
+                        <label for="Ubicacion">
+                            <img src="/assets/Group 1.svg" alt="Icono referente a ubicacion">
+                            Ubicacion
+                        </label>
+                        <select name="Ubicacion" id="Ubicacion">
+                            <option selected value="Default"></option>
+                            <option value="Carobobo">Carobobo</option>
+                            <option value="Lara">Lara</option>
+                            <option value="Caracas">Caracas</option>
+                        </select>
+
+
+
+                        <label for="date">
+                            <img src="/assets/calendar-outline.svg" alt="Icono en forma de calendario">
+                            Fecha
+                            <input type="date" name="date" id="date">
+                        </label>
+
+
+
+                        <label for="time">
+                            <img src="/assets/time-outline.svg" alt="Icono en forma de reloj">
+                            Hora
+                            <input type="time" name="time" id="time">
+                        </label>
+
+
+
+                        <label for="">
+                            <img src="/assets/people-outline.svg" alt="Icono referente a personas">
+                            Tipo de juego
+                        </label>
+                        <select name="Tipo de juego" id="Tipo de juego">
+                            <option selected value="Default"></option>
+                            <option value="Single">Singles</option>
+                            <option value="Doubles">Doubles</option>
+                        </select>
+
+                        <button>
+                            <input type="submit" value="Encontrar partidos">
+                        </button>
+                </div>
+
+                </form>
             </div>
 
         </section>
 
         <!-- Third page -->
-        <section>
+        <section class="sectionthree">
 
-            <img src="/assets/Rectangle 2.jpg" alt="vista superior de canchas de tenis">
+                <img src="/assets/Rectangle 2.jpg" alt="vista superior de canchas de tenis" class="thirdpage">
+            
 
-            <h2>APRENDE, JUEGA Y DISFRUTA</h2>
+            <h2 class="sectionthree__h2">APRENDE, JUEGA Y DISFRUTA</h2>
 
-            <p>MEJORA TU SALUD Y TU ESTILO DE VIDA, MIENTRAS DISFRUTAS DE HACER LO QUE TE GUSTA. CONTAMOS CON EL MAS
+            <p class="sectionthree__p">MEJORA TU SALUD Y TU ESTILO DE VIDA, MIENTRAS DISFRUTAS DE HACER LO QUE TE GUSTA.
+                CONTAMOS CON EL MAS
                 AMPLIO REGISTRO DE JUGADORES Y CANCHAS DISPONIBLES PARA TI.</p>
         </section>
 
